@@ -1,0 +1,80 @@
+.footer
+	background-color: $blue
+	padding: 24px 0
+	clear: both
+	height: 288px
+.footer_info
+	float: left
+	width: 236px
+	height: 240px
+	border-right: 2px solid $footerBorder
+	padding-top: 20px
+	img
+		border-radius: 50%
+		display: block
+		margin-bottom: 12px
+	.footer_title
+		position: relative
+		color: $white
+		text-transform: uppercase
+		font:
+			size: 17px
+		line-height: 22px
+		margin-bottom: 25px
+		.rounds
+			+size(8px)
+			background-color: $yellow
+			border-radius: 50%
+			position: absolute
+			top: 4px
+		.round1
+			right: 120px
+		.round2
+			right: 110px
+		.round3
+			right: 100px
+	.footer_discr
+		color: $white
+		font-size: 14px
+		font-style: italic
+		line-height: 14px
+
+.footer_menu
+	float: left
+	width: 208px
+	height: 240px
+	border-right: 2px solid $footerBorder
+	padding-left: 40px
+	li
+		line-height: 16px
+		padding-bottom: 11px
+		&:last-child
+			padding-bottom: 0
+		a
+			color: $white
+			text-transform: uppercase
+			font-size: 16px
+			font-weight: 400
+
+.footer_uslugi
+	float: left
+	width: 236px
+	height: 240px
+	padding-left: 18px
+	padding-right: 20px
+	&:last-child
+		padding-right: 0
+	li
+		padding-bottom: 10px
+		a
+			color: $white
+			font-size: 13px
+			display: block
+			line-height: 13px
+		&:hover
+			font-weight: 700
+
+
+
+
+
