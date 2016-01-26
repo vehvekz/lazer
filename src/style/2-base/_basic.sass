@@ -23,6 +23,7 @@ body
 .container
 	width: 916px
 	margin: 0 auto
+	clear: both
 
 ul
 	padding: 0
@@ -48,6 +49,93 @@ button
 	cursor: pointer
 	padding: 0
 	margin: 0
+
+/********** Section content **********/
+h1
+	color: $black
+	font-size: 24px
+	font-weight: 700
+	padding: 5px 0 10px
+.bread_crumb
+	a, span
+		color: $grey
+.content
+	padding: 40px 0
+	float: left
+	width: 642px
+	padding-right: 50px
+	img
+		width: 100%
+		display: block
+
+.content_wrap
+	h2
+		color: $blue
+		font-size: 16px
+		font-weight: 700
+		padding: 20px 0 10px
+	h3
+		font-size: 16px
+		font-weight: 700
+	p
+		padding: 10px 0
+	ul
+		margin: 5px 0 15px
+		li
+			padding-left: 15px
+			position: relative
+			color: $black
+			font-size: 16px
+			line-height: 22px
+			margin-bottom: 5px
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				top: 7px
+				left: 0
+				+size(6px)
+				border-radius: 50%
+				background-color: $blue
+	span
+		display: block
+		text-align: right
+		font-style: italic
+.rewiews_wrap
+	
+
+/********** Sidebar Uslugi **********/
+aside
+	width: 274px
+	float: right
+	padding-top: 40px
+	.aside
+		background-color: $uslugi
+		padding: 0 24px
+		h2
+			position: relative
+			font-size: 24px
+			color: $black
+			padding: 20px 0 20px
+			margin-bottom: 16px
+			&::after
+				content: ''
+				display: block
+				position: absolute
+				bottom: 0
+				left: 0
+				width: 29px
+				height: 3px
+				background-color: $yellow
+		ul
+			padding-bottom: 10px
+			li
+				margin-bottom: 14px
+				a
+					display: block
+					font-size: 16px
+					line-height: 18px
+
 
 
 

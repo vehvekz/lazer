@@ -20,6 +20,7 @@
     "fullpage.js": "fullpage#~2.7.4",
     "slick": "*",
     "mixitup": "~2.1.11",
-    "masonry": "~3.3.2"
+    "masonry": "~3.3.2",
+    "magnific-popup": "~1.0.1"
   }
 }

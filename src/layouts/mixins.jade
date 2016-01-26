@@ -18,4 +18,12 @@ mixin svg(name, all)
 		svg(class=name)
 			use(xlink:href="#" + name)
 
+mixin gallery(num)
+	a.gallery_item(href="img/gallery/gallery0" + num + ".jpg")
+		img(src="img/gallery/gallery0" + num + "_.jpg")
+
+mixin about(num)
+	a.gallery_item(href="img/about/pic/about0" + num + ".jpg")
+		img(src="img/about/pic/about0" + num + "_.jpg")
+
 
