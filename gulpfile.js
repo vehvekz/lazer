@@ -83,9 +83,9 @@ gulp.task('js:build', function () {
 	gulp.src(path.src.js) 
 		.pipe(plumber())
 		.pipe(rigger()) 
-		.pipe(sourcemaps.init()) 
+		// .pipe(sourcemaps.init()) 
 		.pipe(uglify()) 
-		.pipe(sourcemaps.write())
+		// .pipe(sourcemaps.write())
 		.pipe(gulp.dest(path.build.js))
 		.pipe(reload({stream: true}));
 });
@@ -94,7 +94,7 @@ gulp.task('js:build', function () {
 gulp.task('style:build', function () {
 	gulp.src(path.src.style)
 		.pipe(plumber())
-		.pipe(sourcemaps.init())
+		// .pipe(sourcemaps.init())
 		.pipe(sass({
 			indentedSyntax: true
 		}))
@@ -103,7 +103,7 @@ gulp.task('style:build', function () {
 			cascade: true
 		}))
 		.pipe(cssmin())
-		.pipe(sourcemaps.write())
+		// .pipe(sourcemaps.write())
 		.pipe(gulp.dest(path.build.css))
 		.pipe(reload({stream: true}));
 });

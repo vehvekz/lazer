@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	$('.gallery_wrap').magnificPopup({
-		delegate: 'a',
+		delegate: '.gallery_item',
 		type: 'image',
 		closeOnContentClick: false,
 		closeBtnInside: false,
@@ -20,4 +20,9 @@ $(document).ready(function() {
 		}
 		
 	});
+
+	$('.hide').on('click', function(){
+		$('.hidden_content').toggleClass('hidden');
+	});
+
 });

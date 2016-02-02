@@ -11,12 +11,10 @@ body
 	color: $main
 
 .wrapper
-	box-sizing: border-box
 	overflow-x: hidden
 	padding: 0
 	margin: 0 auto
 	min-width: 320px
-	max-width: 1920px
 	width: 100%
 	position: relative
 	-webkit-font-smoothing: antialised
@@ -24,6 +22,9 @@ body
 	width: 916px
 	margin: 0 auto
 	clear: both
+
+.hidden
+	display: none
 
 ul
 	padding: 0
@@ -51,12 +52,16 @@ button
 	margin: 0
 
 /********** Section content **********/
-h1
+h1, .h1
 	color: $black
 	font-size: 24px
 	font-weight: 700
 	padding: 5px 0 10px
+	line-height: 24px
+.margin-top
+	margin-top: 40px
 .bread_crumb
+	padding-bottom: 10px
 	a, span
 		color: $grey
 .content
@@ -64,9 +69,6 @@ h1
 	float: left
 	width: 642px
 	padding-right: 50px
-	img
-		width: 100%
-		display: block
 
 .content_wrap
 	h2
@@ -79,6 +81,8 @@ h1
 		font-weight: 700
 	p
 		padding: 10px 0
+	.hide
+		cursor: pointer
 	ul
 		margin: 5px 0 15px
 		li
@@ -97,18 +101,86 @@ h1
 				+size(6px)
 				border-radius: 50%
 				background-color: $blue
+	.inline
+		display: inline-block
+		vertical-align: middle
+		margin-bottom: 8px
+	img.inline
+		margin-right: 5px
+	p.inline
+		padding-left: 15px
+		width: 338px
+	.partners-item
+		width: 194px
+		height: 200px
+		display: inline-block
+		vertical-align: top
+		text-align: center
+		padding: 15px 5px
+		p
+			font-size: 14px
+
+.reviews_wrap
+	border-bottom: 2px solid $bdGrey
+	padding-bottom: 20px
 	span
 		display: block
 		text-align: right
 		font-style: italic
-.rewiews_wrap
-	
+form.otziv
+	width: 460px
+	clear: both
+	.col1
+		width: 130px
+		float: left
+	.col2
+		width: 330px
+		float: right
+	label
+		display: block
+		font-size: 16px
+		margin-bottom: 18px
+		padding: 5px
+	input, textarea
+		width: 100%
+		display: inline-block
+		font-size: 16px
+		padding: 5px
+		margin-bottom: 18px
+		border: 1px solid $grey
+	textarea
+		height: 178px
+	button
+		display: block
+		font-size: 16px
+		font-weight: 700
+		text-transform: uppercase
+		width: 100%
+		background-color: $yellow
+		padding: 8px
+.article_wrap
+	clear: both
+	padding: 20px 0 40px
+	border-bottom: 2px solid $bdGrey
+	a
+		float: left
+		font-style: italic
+		font-size: 16px
+		color: $blue
+		text-decoration: underline
+	span
+		font-style: italic
+		font-size: 16px
+		color: inherit
+	.article_info
+		float: right
+		color: $grey
 
 /********** Sidebar Uslugi **********/
 aside
 	width: 274px
 	float: right
-	padding-top: 40px
+	padding: 40px 0
 	.aside
 		background-color: $uslugi
 		padding: 0 24px

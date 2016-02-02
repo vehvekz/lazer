@@ -1,6 +1,6 @@
 .gallery_wrap
 	padding-top: 20px
-.gallery_item
+.gallery_item, .video
 	position: relative
 	display: inline-block
 	margin: 0 7px 14px
@@ -9,6 +9,9 @@
 	border-radius: 50%
 	outline: none
 	transition: all .5s ease
+	img
+		display: block
+		border-radius: 50%
 	&:hover::before
 		content: ''
 		display: block
@@ -19,16 +22,26 @@
 		border-radius: 50%
 		background-color: rgba(0,0,0,.7)
 		transition: all .5s ease
-	&:hover::after
-		content: ''
-		display: block
-		position: absolute
-		top: 0
-		left: 0
-		+size(100px)
-		border-radius: 50%
-		background: url(../img/zoom.png) no-repeat center
-		transition: all .5s ease
+.gallery_item:hover::after
+	content: ''
+	display: block
+	position: absolute
+	top: 0
+	left: 0
+	+size(100px)
+	border-radius: 50%
+	background: url(../img/zoom.png) no-repeat center
+	transition: all .5s ease
+.video:hover::after
+	content: ''
+	display: block
+	position: absolute
+	top: 0
+	left: 0
+	+size(100px)
+	border-radius: 50%
+	background: url(../img/video.png) no-repeat center
+	transition: all .5s ease
 
 
 
